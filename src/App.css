@@ -72,3 +72,63 @@ body {
     flex-direction: column; /* Stacks columns vertically on small screens */
   }
 }
+
+.card {
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-header {
+  margin-bottom: 12px;
+}
+
+.card-date {
+  font-size: 14px;
+}
+
+.card-body {
+  padding-bottom: 12px;
+}
+
+.card-title {
+  text-decoration: none;
+  color: #c5d0ec;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card:hover .card-title {
+  color: #53d3d4; /* Change color when hovering over the card */
+}
+
+.card:hover {
+  border: 0.1px solid #8396bd;
+  cursor: pointer;
+}
+
+.card-description {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.card-technologies {
+  list-style-type: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.technology-item {
+  background-color: #1c3555;
+  color: #53d3d4;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}

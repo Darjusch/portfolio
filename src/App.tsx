@@ -85,15 +85,32 @@ export const About = () => {
 };
 
 export const Projects = () => {
+  const handleCardClick = (url: string) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div className="projects">
-      <div className="project">
-        <h3>Project 1</h3>
-        <p>Project description</p>
-      </div>
-      <div className="project">
-        <h3>Project 2</h3>
-        <p>Project description</p>
+      <div
+        className="card"
+        onClick={() => handleCardClick("https://kitaplatz-zentrale.de/")}
+      >
+        <header className="card-header">
+          <h2 className="card-date">2023 — Present</h2>
+        </header>
+        <div className="card-body">
+          <h3 className="card-title">Backend Engineer</h3>
+          <p className="card-description">
+            Build a platform for Parents to find a place for their children.
+          </p>
+          <ul className="card-technologies">
+            <li className="technology-item">JavaScript</li>
+            <li className="technology-item">TypeScript</li>
+            <li className="technology-item">React</li>
+            <li className="technology-item">Node.js</li>
+            <li className="technology-item">AWS</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
