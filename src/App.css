@@ -1,0 +1,74 @@
+body {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 50px;
+  background: rgb(16, 23, 42);
+  background: linear-gradient(
+    90deg,
+    rgba(16, 23, 42, 1) 51%,
+    rgba(17, 30, 66, 1) 100%
+  );
+  color: #8396bd;
+}
+
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+
+.highlight-text {
+  color: #c5d0ec;
+}
+
+.portfolio {
+  display: flex; /* Enables Flexbox */
+  justify-content: space-between; /* Places space between the columns */
+  gap: 20px; /* Optional: Adds space between columns */
+}
+
+.column {
+  flex: 1; /* Each column takes up an equal amount of space */
+  padding: 20px;
+  min-width: 200px; /* Ensures columns don't shrink too much on smaller screens */
+}
+
+.nav-bar {
+  margin-top: 75px;
+  width: max-content;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.nav-bar a {
+  display: flex; /* Ensures the padding on the span affects the a */
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.nav-bar a.active {
+  color: #c5d0ec;
+}
+
+.nav-bar-item {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  body {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .portfolio {
+    flex-direction: column; /* Stacks columns vertically on small screens */
+  }
+}
