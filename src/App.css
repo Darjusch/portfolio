@@ -10,7 +10,7 @@
 body {
   padding-left: 200px;
   padding-right: 200px;
-  padding-top: 50px;
+  margin-top: 0;
   background: rgb(16, 23, 42);
   background: linear-gradient(
     90deg,
@@ -148,6 +148,11 @@ body {
   top: 0; /* Sticks to the top of the viewport */
   width: 250px; /* Adjust width as needed */
   height: 100vh; /* Takes up the full height of the viewport */
+  padding-top: 50px;
+}
+
+.right-column {
+  padding-top: 50px;
 }
 
 /* Media query for smaller screens */

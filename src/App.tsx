@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import projectsData from "./projects.json";
 import workExperienceData from "./work-expirience.json";
@@ -44,6 +44,40 @@ export const Introduction = () => {
 
 export const NavBar = () => {
   const [activeSection, setActiveSection] = useState("about");
+  console.log("HEllo world");
+
+  const handleScroll = () => {
+    // Throttle or debounce function can be used here to limit execution frequency
+    window.requestAnimationFrame(() => {
+      const sections = document.querySelectorAll("div[id]");
+      let current: string | null = "";
+
+      sections.forEach((section) => {
+        const sectionTop =
+          section.getBoundingClientRect().top + window.scrollY - 60; // Adjust based on your desired offset
+        const sectionBottom = sectionTop + section.offsetHeight;
+
+        if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      // Update the state only if the section has changed
+      if (current && current !== activeSection) {
+        setActiveSection(current);
+      }
+    });
+  };
+
+  useEffect(() => {
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [activeSection]); // Dependency array includes `activeSection` to update only when it changes
 
   const handleClick = (section: string) => {
     setActiveSection(section);
