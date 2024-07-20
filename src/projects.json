@@ -1,0 +1,64 @@
+[
+  {
+    "title": "Kitaplatz Zentrale - Web",
+    "url": "https://kitaplatz-zentrale.de/",
+    "description": "A platform for Parents to find a place for their children.",
+    "technologies": ["JavaScript", "TypeScript", "React", "Node.js", "AWS"],
+    "image": ""
+  },
+  {
+    "title": "Kitaplatz Zentrale - Kubernetes",
+    "url": "https://kitaplatz-zentrale.de/",
+    "description": "A platform for Parents to find a place for their children.",
+    "technologies": [
+      "Kubernetes",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Node.js"
+    ],
+    "image": ""
+  },
+  {
+    "title": "Goodbuy - Web",
+    "url": "https://github.com/code-goodbuy/goodbuy-nodejs",
+    "description": "Scan products and get information about their sustainability.",
+    "technologies": ["JavaScript", "TypeScript", "Node.js", "Docker"],
+    "image": ""
+  },
+  {
+    "title": "Fitup - Mobile",
+    "url": "https://github.com/Darjusch/Fitup-Flutter",
+    "description": "Hold yourself accountable by betting on your habits!",
+    "technologies": ["Dart", "Flutter", "Firebase", "Firestorage"],
+    "image": ""
+  },
+  {
+    "title": "Fitup - Smartcontract",
+    "url": "https://github.com/Darjusch/fitup",
+    "description": "Hold yourself accountable by betting on your habits!",
+    "technologies": ["Solidity", "JavaScript"],
+    "image": ""
+  },
+  {
+    "title": "SommerObst - Mobile",
+    "url": "https://github.com/Darjusch/SommerObstApp",
+    "description": "An app that helps a greengrocer business manage stock supplies, allowing sellers to update inventory, notify drivers of restocking needs, send messages, and generate admin reports.!",
+    "technologies": ["Dart", "Flutter", "Firebase", "Firestorage"],
+    "image": ""
+  },
+  {
+    "title": "Chirp - Hardware",
+    "url": "https://github.com/Darjusch/Chirp_ESP32",
+    "description": "Developing a device that records natural sounds and identifies birds by their chirps.",
+    "technologies": ["C++", "Hardware", "ESP32"],
+    "image": ""
+  },
+  {
+    "title": "Pizza-Shop - Web",
+    "url": "https://github.com/Darjusch/pizza-shop/tree/main",
+    "description": "A simple pizza shop website.",
+    "technologies": ["React", "TypeScript", "JavaScript"],
+    "image": ""
+  }
+]

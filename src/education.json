@@ -1,0 +1,18 @@
+{
+  "education": {
+    "school": {
+      "name": "Kurt Tucholsky Schule",
+      "location": "Hamburg",
+      "grade": "1.8"
+    },
+    "university": {
+      "name": "CODE University",
+      "degree": "Bachelor of Science",
+      "grade": "2"
+    },
+    "bachelor_thesis": {
+      "title": "Imperative vs. Declarative Deployment",
+      "description": "In-depth examination of Infrastructure as Code and efficient deployment strategies."
+    }
+  }
+}

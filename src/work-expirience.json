@@ -1,0 +1,35 @@
+[
+  {
+    "time_period": "03/2022 – 09/2022",
+    "location": "Berlin, Germany",
+    "company": "Light Protocol",
+    "role": "Development of an SDK",
+    "description": [
+      "Development of an SDK for interaction with Solana programs (Blockchain) for the Light Protocol",
+      "Extensive testing to ensure the reliability and robustness of the SDK",
+      "Code refactoring to improve code quality, maintainability, and performance"
+    ],
+    "technologies": ["Solana", "Blockchain"],
+    "position": "Freelancer"
+  },
+  {
+    "time_period": "06/2020 – 12/2020",
+    "location": "Berlin, Germany",
+    "company": "GK-Sommerobst oHG",
+    "role": "Concept, design, and development of a mobile application",
+    "description": [
+      "Concept, design, and development of a mobile application for efficient inventory management, supply, and communication using Flutter and Dart"
+    ],
+    "technologies": ["Flutter", "Dart"],
+    "position": "Freelancer"
+  },
+  {
+    "time_period": "02/2019 – 02/2020",
+    "location": "Berlin, Germany",
+    "company": "Bonial International GmbH",
+    "role": "Working Student",
+    "description": ["Automation of internal processes and web scraping"],
+    "technologies": ["Automation", "Web Scraping"],
+    "position": "Working Student"
+  }
+]
