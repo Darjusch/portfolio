@@ -6,12 +6,6 @@ import projectsData from "./projects.json";
 import workExperienceData from "./work-expirience.json";
 function App() {
   return (
-    // TODO Margins / Paddings should be consisten -> Multiples of each other
-    // Texts need to be updated -> About me and for Projects / Work expirience !
-    // TODO align the card with the about text
-    // We need a Icon
-    // We need to deploy
-
     <div className="portfolio">
       <div className="column left-column">
         <Introduction />
@@ -30,6 +24,7 @@ function App() {
 }
 
 export default App;
+
 export const Impressum = () => {
   return (
     <div>
@@ -135,14 +130,13 @@ export const NavBar = () => {
   const [activeSection, setActiveSection] = useState("about");
 
   const handleScroll = () => {
-    // Throttle or debounce function can be used here to limit execution frequency
     window.requestAnimationFrame(() => {
       const sections = document.querySelectorAll("div[id]");
       let current: string | null = "";
 
       sections.forEach((section) => {
         const sectionTop =
-          section.getBoundingClientRect().top + window.scrollY - 60; // Adjust based on your desired offset
+          section.getBoundingClientRect().top + window.scrollY - 60;
         const sectionBottom = sectionTop + section.offsetHeight;
 
         if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {

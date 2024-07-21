@@ -59,6 +59,7 @@ body {
 
 .nav-bar a.active {
   color: var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color); /* Underline the active section */
 }
 
 .nav-bar-item {
@@ -250,6 +251,18 @@ p {
 .arrow-icon {
   width: 24px; /* Adjust width as needed */
   height: 21px; /* Adjust height as needed */
+}
+.mouse-highlight {
+  position: fixed; /* Fixed position to stay in place */
+  top: 0;
+  left: 0;
+  width: 300px; /* Diameter of the circle */
+  height: 300px; /* Diameter of the circle */
+  border-radius: 50%; /* Make it circular */
+  pointer-events: none; /* Make sure it doesn't interfere with mouse events */
+  mix-blend-mode: overlay; /* Optional: blend mode for better effect */
+  z-index: 10; /* Ensure it’s above other elements */
+  transition: background-color 0.1s ease-out; /* Smooth transition for color change */
 }
 
 /* Media query for smaller screens */
