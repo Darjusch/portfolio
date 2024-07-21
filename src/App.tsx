@@ -2,11 +2,13 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import projectsData from "./projects.json";
 import workExperienceData from "./work-expirience.json";
-import educationData from "./education.json";
 function App() {
   return (
-    // TODO EMBED TryHackMe, HackTheBox, PortSwigger, and other badges that was a lot of time and effort
     // TODO Margins / Paddings should be consisten -> Multiples of each other
+    // Texts need to be updated -> About me and for Projects / Work expirience !
+    // TODO align the card with the about text
+
+    // TODO EMBED TryHackMe, HackTheBox, PortSwigger, and other badges that was a lot of time and effort
     // https://tryhackme.com/p/PrinceOfPersia
     // <img src="https://tryhackme-badges.s3.amazonaws.com/PrinceOfPersia.png" alt="TryHackMe">
     // either of this works
@@ -20,7 +22,7 @@ function App() {
       </div>
       <div className="column right-column">
         <About />
-        <Education />
+        <Techstack />
         <WorkExperience />
         <Projects />
       </div>
@@ -37,6 +39,7 @@ export const Introduction = () => {
       <h3 className="highlight-text">Software Engineer</h3>
       <p>
         I build pixel-perfect, engaging, and accessible digital experiences.
+        <p>Based in Berlin.</p>
       </p>
     </div>
   );
@@ -44,7 +47,6 @@ export const Introduction = () => {
 
 export const NavBar = () => {
   const [activeSection, setActiveSection] = useState("about");
-  console.log("HEllo world");
 
   const handleScroll = () => {
     // Throttle or debounce function can be used here to limit execution frequency
@@ -118,19 +120,45 @@ export const NavBar = () => {
   );
 };
 
+export const Techstack = () => {
+  const techstack = [
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Node.js",
+    "Java",
+    "MongoDB",
+    "PostgreSQL",
+    "AWS",
+    "Solidity",
+  ];
+  return (
+    <div className="techstack">
+      My techstack
+      <div className="card-technologies">
+        {techstack.map((tech, techIndex) => (
+          <li key={techIndex} className="technology-item">
+            {tech}
+          </li>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 export const About = () => {
   return (
     <div id="about" className="about">
-      <p>Based in Berlin.</p>
       <p>
-        I build Stuff since i am 12 years old. I am a Software Engineer with a
-        passion for building interactive and engaging web applications. I am
-        experienced in JavaScript, TypeScript, React, Node.js, and GraphQL. I am
-        always looking to learn new technologies and improve my skills. I am a
-        strong advocate for accessibility and performance. I believe that the
-        web should be accessible to everyone, regardless of their abilities or
-        the devices they use. When i am not coding i like: Running, Fitness,
-        Climbing, Swimming, Reading, Cooking, and Traveling.
+        Back in 2016, my journey began at a small startup where I started
+        building my first websites using only HTML and CSS. I fell in love with
+        the process and enrolled in university to learn more about it. Since
+        then, I have worked on various projects in my free time, at university,
+        at work, and for clients. I have explored many different fields and
+        gained valuable experience in cybersecurity, blockchain, and hardware
+        development. However, my specialty is Fullstack Development. When I'm
+        not coding, I'm probably planning my life (I'm a big fan of planning and
+        making lists), traveling, cooking, or engaged in some sportive activity.
       </p>
     </div>
   );
@@ -192,24 +220,6 @@ export const WorkExperience = () => {
           </div>
         </div>
       ))}
-    </div>
-  );
-};
-
-export const Education = () => {
-  const { education } = educationData;
-  return (
-    <div className="education">
-      <div className="card">
-        <div className="card-body">
-          <h4>
-            {education.university.name} - {education.university.grade}
-          </h4>
-          <p>
-            {education.school.name} - {education.school.grade}
-          </p>
-        </div>
-      </div>
     </div>
   );
 };

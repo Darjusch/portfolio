@@ -8,9 +8,9 @@
 }
 
 body {
-  padding-left: 200px;
-  padding-right: 200px;
-  margin-top: 0;
+  padding-left: 250px;
+  padding-right: 250px;
+  margin-top: 50px;
   background: rgb(16, 23, 42);
   background: linear-gradient(
     90deg,
@@ -69,7 +69,6 @@ body {
 .card {
   border-radius: 8px;
   padding: 16px;
-  margin-bottom: 20px;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -127,7 +126,7 @@ body {
 }
 
 .social {
-  margin-top: 380px;
+  margin-top: 300px;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -155,6 +154,21 @@ body {
   padding-top: 50px;
 }
 
+.about {
+  margin-bottom: 50px;
+}
+
+.work-expirience {
+  margin-bottom: 100px;
+}
+
+.projects {
+  margin-bottom: 100px;
+}
+
+.techstack {
+  margin-bottom: 50px;
+}
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   body {
