@@ -13,8 +13,10 @@ function App() {
         <SocialMedia />
       </div>
       <div className="column right-column">
-        <About />
-        <Techstack />
+        <div id="about">
+          <About />
+          <Techstack />
+        </div>
         <WorkExperience />
         <Projects />
         <ImpressumButton />
@@ -228,7 +230,7 @@ export const Techstack = () => {
 
 export const About = () => {
   return (
-    <div id="about" className="about">
+    <div className="about">
       <p>
         Back in 2016, my journey began at a small startup where I started
         building my first websites using only HTML and CSS. I fell in love with
