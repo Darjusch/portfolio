@@ -9,7 +9,16 @@
       "Extensive testing to ensure the reliability and robustness of the SDK",
       "Code refactoring to improve code quality, maintainability, and performance"
     ],
-    "technologies": ["Solana", "Blockchain"],
+    "technologies": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "NodeJS",
+      "ReactNative",
+      "GCP",
+      "Solana",
+      "Blockchain"
+    ],
     "position": "Freelancer"
   },
   {
@@ -20,7 +29,14 @@
     "description": [
       "Concept, design, and development of a mobile application for efficient inventory management, supply, and communication using Flutter and Dart"
     ],
-    "technologies": ["Flutter", "Dart"],
+    "technologies": [
+      "Flutter",
+      "Dart",
+      "Figma",
+      "Firebase",
+      "FirebaseStorage",
+      "FiebaseCloudMessaging"
+    ],
     "position": "Freelancer"
   },
   {
@@ -29,7 +45,14 @@
     "company": "Bonial International GmbH",
     "role": "Working Student",
     "description": ["Automation of internal processes and web scraping"],
-    "technologies": ["Automation", "Web Scraping"],
+    "technologies": [
+      "Java",
+      "Groovy",
+      "Spring",
+      "Python",
+      "Selenium",
+      "BeautifulSoup"
+    ],
     "position": "Working Student"
   }
 ]

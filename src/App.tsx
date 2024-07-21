@@ -7,6 +7,9 @@ function App() {
     // TODO Margins / Paddings should be consisten -> Multiples of each other
     // Texts need to be updated -> About me and for Projects / Work expirience !
     // TODO align the card with the about text
+    // We need a Icon
+    // We need to deploy
+    // We need Imprint
 
     // TODO EMBED TryHackMe, HackTheBox, PortSwigger, and other badges that was a lot of time and effort
     // https://tryhackme.com/p/PrinceOfPersia
@@ -32,13 +35,42 @@ function App() {
 
 export default App;
 
+export const ViewResumeButton = () => {
+  return (
+    <a
+      className="view-resume-button"
+      href="/resume.pdf"
+      target="_blank"
+      rel="noreferrer noopener"
+      aria-label="View Full Résumé (opens in a new tab)"
+    >
+      <span className="view-resume-button-text">
+        View Full Résumé
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          aria-hidden="true"
+          className="view-resume-icon"
+        >
+          <path
+            fillRule="evenodd"
+            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+            clipRule="evenodd"
+          ></path>
+        </svg>
+      </span>
+    </a>
+  );
+};
+
 export const Introduction = () => {
   return (
     <div className="introduction-wrapper">
       <h1 className="highlight-text">Darjusch Schrand</h1>
       <h3 className="highlight-text">Software Engineer</h3>
       <p>
-        I build pixel-perfect, engaging, and accessible digital experiences.
+        I create thoughtful, engaging, and accessible digital experiences.
         <p>Based in Berlin.</p>
       </p>
     </div>
@@ -152,13 +184,18 @@ export const About = () => {
       <p>
         Back in 2016, my journey began at a small startup where I started
         building my first websites using only HTML and CSS. I fell in love with
-        the process and enrolled in university to learn more about it. Since
-        then, I have worked on various projects in my free time, at university,
-        at work, and for clients. I have explored many different fields and
-        gained valuable experience in cybersecurity, blockchain, and hardware
-        development. However, my specialty is Fullstack Development. When I'm
-        not coding, I'm probably planning my life (I'm a big fan of planning and
-        making lists), traveling, cooking, or engaged in some sportive activity.
+        the process and enrolled in university to learn more about it.
+      </p>
+      <p>
+        Since then, I have worked on various projects in my free time, at
+        university, at work, and for clients. I have explored many different
+        fields and gained valuable experience in cybersecurity, blockchain, and
+        hardware development. However, my specialty is Fullstack Development.
+      </p>
+      <p>
+        When I'm not coding, I'm probably planning my life (I'm a big fan of
+        planning and making lists), traveling, cooking, or engaged in some
+        sportive activity.
       </p>
     </div>
   );
@@ -220,6 +257,7 @@ export const WorkExperience = () => {
           </div>
         </div>
       ))}
+      <ViewResumeButton />
     </div>
   );
 };

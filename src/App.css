@@ -157,6 +157,10 @@ body {
 .about {
   margin-bottom: 50px;
 }
+p {
+  line-height: 1.5; /* This sets the line spacing to 1.5 times the normal spacing */
+  margin-bottom: 1em; /* This adds space between paragraphs */
+}
 
 .work-expirience {
   margin-bottom: 100px;
@@ -169,6 +173,38 @@ body {
 .techstack {
   margin-bottom: 50px;
 }
+
+.view-resume-button {
+  display: inline-flex;
+  align-items: baseline;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 1rem; /* equivalent to text-base */
+  color: #cbd5e1; /* equivalent to text-slate-200 */
+  text-decoration: none;
+  transition: color 0.3s;
+  margin-top: 50px;
+}
+
+.view-resume-icon {
+  display: inline-block;
+  height: 1rem; /* equivalent to h-4 */
+  width: 1rem; /* equivalent to w-4 */
+  margin-left: 0.25rem; /* equivalent to ml-1 */
+  transition: transform 0.3s;
+  transform: translateY(3px); /* equivalent to translate-y-px */
+}
+
+.view-resume-button:hover .view-resume-icon,
+.view-resume-button:focus .view-resume-icon {
+  transform: translateX(0.25rem) translateY(-0.25rem); /* equivalent to -translate-y-1 and translate-x-1 */
+}
+
+.view-resume-button:hover {
+  outline: none;
+  color: #2dd4bf; /* equivalent to focus-visible:text-teal-300 */
+}
+
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   body {
