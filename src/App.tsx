@@ -28,12 +28,21 @@ function App() {
         <Techstack />
         <WorkExperience />
         <Projects />
+        <ImpressumButton />
       </div>
     </div>
   );
 }
 
 export default App;
+
+export const ImpressumButton = () => {
+  return (
+    <Link to="/impressum">
+      <span className="nav-bar-item">IMPRESSUM</span>
+    </Link>
+  );
+};
 
 export const ViewResumeButton = () => {
   return (
@@ -70,8 +79,8 @@ export const Introduction = () => {
       <h1 className="highlight-text">Darjusch Schrand</h1>
       <h3 className="highlight-text">Software Engineer</h3>
       <p>
-        I create thoughtful, engaging, and accessible digital experiences.
-        <p>Based in Berlin.</p>
+        I create thoughtful, engaging, and accessible digital experiences.{" "}
+        <br /> Based in Berlin.
       </p>
     </div>
   );
