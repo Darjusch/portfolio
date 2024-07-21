@@ -27,7 +27,7 @@ function App() {
 
 export default App;
 
-export const Impressum = () => {
+export const Impressum: React.FC = () => {
   return (
     <div>
       <BackButton />
@@ -134,21 +134,24 @@ export const NavBar = () => {
   const handleScroll = () => {
     window.requestAnimationFrame(() => {
       const sections = document.querySelectorAll("div[id]");
-      let current: string | null = "";
+      let current: string | null = null;
 
       sections.forEach((section) => {
+        const element = section as HTMLElement; // Type assertion
         const sectionTop =
-          section.getBoundingClientRect().top + window.scrollY - 60;
-        const sectionBottom = sectionTop + section.offsetHeight;
+          element.getBoundingClientRect().top + window.scrollY - 60;
+        const sectionBottom = sectionTop + element.offsetHeight; // No error now
 
-        if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
-          current = section.getAttribute("id");
+        if (
+          window.scrollY + window.innerHeight / 2 > sectionTop &&
+          window.scrollY + window.innerHeight / 2 < sectionBottom
+        ) {
+          current = element.getAttribute("id");
         }
       });
 
-      // Update the state only if the section has changed
-      if (current && current !== activeSection) {
-        setActiveSection(current);
+      if (current !== activeSection) {
+        if (current !== null) setActiveSection(current);
       }
     });
   };
