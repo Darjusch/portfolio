@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
 import "./App.css";
 import projectsData from "./projects.json";
 import workExperienceData from "./work-expirience.json";
@@ -9,13 +11,6 @@ function App() {
     // TODO align the card with the about text
     // We need a Icon
     // We need to deploy
-    // We need Imprint
-
-    // TODO EMBED TryHackMe, HackTheBox, PortSwigger, and other badges that was a lot of time and effort
-    // https://tryhackme.com/p/PrinceOfPersia
-    // <img src="https://tryhackme-badges.s3.amazonaws.com/PrinceOfPersia.png" alt="TryHackMe">
-    // either of this works
-    // <script src="https://tryhackme.com/badge/84515"></script>
 
     <div className="portfolio">
       <div className="column left-column">
@@ -35,12 +30,62 @@ function App() {
 }
 
 export default App;
+export const Impressum = () => {
+  return (
+    <div>
+      <BackButton />
+      <h1>Impressum</h1>
+      <h2>Angaben gemäß §5 TMG</h2>
+      <p>Darjusch Schrand </p>
+      <p>Fennstraße 1 12439 Berlin Deutschland </p>
+      <h2>Kontaktdaten</h2>
+      <p>Telefon: +49 17621930466 </p>
+      <p>E-Mail: Darjusch_schrand@gmx.de</p>
+      <h2>EU-Streitschlichtung</h2>
+      <p>
+        Die Europäische Kommission stellt eine Plattform zur
+        Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr/.
+      </p>
+      <p> Meine E-Mail-Adresse finden Sie weiter oben im Impressum.</p>
+      <h2>Verbraucher­streit­beilegung/Universal­schlichtungs­stelle</h2>
+      <p>
+        Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren
+        vor einer Verbraucherschlichtungsstelle teilzunehmen.
+      </p>
+    </div>
+  );
+};
 
+export const BackButton = () => {
+  return (
+    <div className="back-button-container">
+      <Link to="/" className="back-button">
+        <svg
+          className="arrow-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 19l-7-7m0 0l7-7m-7 7h16"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+        <span>BACK</span>
+      </Link>
+    </div>
+  );
+};
 export const ImpressumButton = () => {
   return (
-    <Link to="/impressum">
-      <span className="nav-bar-item">IMPRESSUM</span>
-    </Link>
+    <div className="impressum-button-container">
+      <Link to={"impressum"} className="impressum-button">
+        IMPRESSUM
+      </Link>
+    </div>
   );
 };
 
@@ -127,7 +172,7 @@ export const NavBar = () => {
   };
 
   return (
-    <nav className="nav-bar">
+    <nav className="nav-bar hide-on-mobile">
       <ul>
         <li>
           <a

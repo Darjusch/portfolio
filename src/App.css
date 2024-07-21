@@ -67,11 +67,11 @@ body {
 }
 
 .card {
-  border-radius: 8px;
-  padding: 16px;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgb(16, 23, 42);
 }
 
 .card-header {
@@ -93,13 +93,13 @@ body {
   font-weight: bold;
 }
 
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px #17254a;
+  transform: translateY(-4px);
+}
 .card:hover .card-title {
   color: var(--secondary-color);
-}
-
-.card:hover {
-  border: 0.1px solid var(--normal-color);
-  cursor: pointer;
 }
 
 .card-description {
@@ -205,6 +205,53 @@ p {
   color: #2dd4bf; /* equivalent to focus-visible:text-teal-300 */
 }
 
+.impressum-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 25px;
+}
+
+.impressum-button {
+  color: inherit;
+  text-decoration: none;
+  width: max-content;
+}
+.impressum-button:hover {
+  color: var(--primary-color);
+}
+.back-button-container {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 3rem; /* Adjust as needed */
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2.5rem; /* Adjust padding as needed */
+  border: 2px solid var(--secondary-color); /* Replace with your secondary color variable */
+  border-radius: 1.5rem; /* Rounded corners */
+  background: none; /* Transparent background */
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Text color */
+  font-size: 1.125rem; /* Adjust text size as needed */
+  font-weight: 600; /* Semibold */
+}
+
+.arrow-icon {
+  width: 24px; /* Adjust width as needed */
+  height: 21px; /* Adjust height as needed */
+}
+
+/* Optional: Add hover and focus states for better UX */
+.back-button:hover {
+  color: var(--primary-color);
+}
+.arrow-icon {
+  width: 24px; /* Adjust width as needed */
+  height: 21px; /* Adjust height as needed */
+}
+
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   body {
@@ -223,5 +270,9 @@ p {
     position: static; /* Removes sticky positioning */
     width: 100%; /* Takes up full width of the viewport */
     height: auto; /* Takes up the height of the content */
+  }
+
+  .hide-on-mobile {
+    display: none; /* Hides elements on mobile */
   }
 }
