@@ -121,7 +121,7 @@ export const Introduction = () => {
       <h1 className="highlight-text">Darjusch Schrand</h1>
       <h3 className="highlight-text">Software Engineer</h3>
       <p>
-        I create thoughtful, engaging, and accessible digital experiences.{" "}
+        I create thoughtful, engaging, and accessible digital experiences.
         <br /> Based in Berlin.
       </p>
     </div>
@@ -237,18 +237,21 @@ export const About = () => {
       <p>
         Back in 2016, my journey began at a small startup where I started
         building my first websites using only HTML and CSS. I fell in love with
-        the process and enrolled in university to learn more about it.
+        the process and enrolled in
+        <span className="highlight-text">university</span> to learn more about
+        it.
       </p>
       <p>
-        Since then, I have worked on various projects in my free time, at
-        university, at work, and for clients. I have explored many different
-        fields and gained valuable experience in cybersecurity, blockchain, and
-        hardware development. However, my specialty is Fullstack Development.
+        Since then, I have worked on various projects in my free time, at , at
+        work, and for clients. I had the opportunity to work for a
+        <span className="highlight-text">startup</span>, a huge
+        <span className="highlight-text">corporation</span>, and on my
+        <span className="highlight-text">own projects</span>.
       </p>
       <p>
-        When I'm not coding, I'm probably planning my life (I'm a big fan of
-        planning and making lists), traveling, cooking, or engaged in some
-        sportive activity.
+        When I'm not coding, I'm probably planning my life, traveling, or
+        engaged in some <span className="highlight-text">sportive</span>
+        activity.
       </p>
     </div>
   );
