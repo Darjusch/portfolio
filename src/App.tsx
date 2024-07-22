@@ -139,7 +139,7 @@ export const NavBar = () => {
       sections.forEach((section) => {
         const element = section as HTMLElement; // Type assertion
         const sectionTop =
-          element.getBoundingClientRect().top + window.scrollY - 60;
+          element.getBoundingClientRect().top + window.scrollY - 40;
         const sectionBottom = sectionTop + element.offsetHeight; // No error now
 
         if (
