@@ -238,19 +238,19 @@ export const About = () => {
         Back in 2016, my journey began at a small startup where I started
         building my first websites using only HTML and CSS. I fell in love with
         the process and enrolled in
-        <span className="highlight-text">university</span> to learn more about
+        <span className="highlight-text"> university</span> to learn more about
         it.
       </p>
       <p>
         Since then, I have worked on various projects in my free time, at , at
         work, and for clients. I had the opportunity to work for a
-        <span className="highlight-text">startup</span>, a huge
-        <span className="highlight-text">corporation</span>, and on my
-        <span className="highlight-text">own projects</span>.
+        <span className="highlight-text"> startup</span>, a
+        <span className="highlight-text"> huge corporation</span>, and on my
+        <span className="highlight-text"> own projects</span>.
       </p>
       <p>
         When I'm not coding, I'm probably planning my life, traveling, or
-        engaged in some <span className="highlight-text">sportive</span>
+        engaged in some <span className="highlight-text"> sportive </span>
         activity.
       </p>
     </div>
