@@ -242,9 +242,9 @@ export const About = () => {
         it.
       </p>
       <p>
-        Since then, I have worked on various projects in my free time, at , at
-        work, and for clients. I had the opportunity to work for a
-        <span className="highlight-text"> startup</span>, a
+        Since then, I have worked on various projects in my free time, at
+        university, at work, and for clients. I had the opportunity to work for
+        a<span className="highlight-text"> startup</span>, a
         <span className="highlight-text"> huge corporation</span>, and on my
         <span className="highlight-text"> own projects</span>.
       </p>

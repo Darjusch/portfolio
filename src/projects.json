@@ -43,7 +43,7 @@
   {
     "title": "SommerObst - Mobile",
     "url": "https://github.com/Darjusch/SommerObstApp",
-    "description": "An app that helps a greengrocer business manage stock supplies, allowing sellers to update inventory, notify drivers of restocking needs, send messages, and generate admin reports.!",
+    "description": "An app that helps a greengrocer business manage stock supplies, allowing sellers to update inventory, notify drivers of restocking needs, send messages, and generate admin reports.",
     "technologies": [
       "Flutter",
       "Dart",
